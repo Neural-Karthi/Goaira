@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Planc-Regular';
+    src: url('./assets/Font/Planc-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Planc-semibold';
+    src: url('./assets/Font/Planc-SemiBold.ttf');
+}
+  
+@font-face{
+    font-family: 'Planc-medium';
+    src: url('./assets/Font/Planc-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'Planc-ExtraBold';
+    src: url('./assets/Font/Planc-ExtraBold.ttf');
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-PlancRegular: 'Planc-Regular', sans-serif;
+    --font-Plancsemibold: 'Planc-semibold', sans-serif;
+    --font-Plancmedium: 'Plancmedium', sans-serif;
+    --font-PlancExtraBold: 'Planc-ExtraBold', sans-serif;
+}
+
+
+@media screen and (max-width: 339px) {
+    .boxheight{
+        height: 70vh;
+    }
+    .smalltitl{
+        font-size: 14px;
+    }
+    .maintitle{
+        font-size: 30px;
+    }   
+    .subtitle{
+        font-size: 16px;
+    }
+}
+
+.no-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+  
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+  
