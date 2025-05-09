@@ -7,7 +7,8 @@ import icon_2 from '../assets/images/Registration_Icon_2.svg'
 import icon_3 from '../assets/images/Registration_Icon_3.svg'
 import icon_4 from '../assets/images/Registration_Icon_4.svg'
 import icon_5 from '../assets/images/Registration_Icon_5.svg'
-import Question_component from '../component//Question_component.jsx'
+import Question_component from '../component/Question_component.jsx'
+
 const RegisterationPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

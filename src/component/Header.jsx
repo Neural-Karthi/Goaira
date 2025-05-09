@@ -2,11 +2,7 @@ import React from 'react'
 import Goairalightlogo from '../assets/images/Goaira_light_logo.svg'
 import Goairadarklogo from '../assets/images/Goaira_Dark_logo.svg'
 import MenuIcon_Dark from '../assets/images/MenuIcon_Dark.svg'
-<<<<<<< HEAD
-import MenuIcon_Light from '../assets/images/MenuIcon_Light.svg'
-=======
 import MenuIcon_Light from '../assets/images/MenuIcon_light.svg'
->>>>>>> temp-fixes
 import { useNavigate,Link } from 'react-router-dom';
 
 const Header = (props) => {

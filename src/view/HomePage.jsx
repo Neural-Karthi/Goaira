@@ -16,6 +16,7 @@ import Banner_3 from  '../assets/images/Banner_section_3.svg'
 import Banner_4 from  '../assets/images/Banner_section_4_1.svg' 
 import Banner_4_2 from  '../assets/images/Banner_section_4_2.svg' 
 import {useNavigate} from 'react-router-dom'
+
 const HomePage = () => {
     const Navigate = useNavigate()
     const Service_img = [Service_img_1, Service_img_2, Service_img_3, Service_img_4, Service_img_5, Service_img_6]

@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-import Down_arrow from '../assets/Images/Down_arrow.svg';
-=======
 import Down_arrow from '../assets/images/Down_arrow.svg';
->>>>>>> temp-fixes
 
 const faqs = [
   {
