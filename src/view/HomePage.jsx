@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react';
 import Header from '../component/Header.jsx'  
 import Home_Banner_section_1 from '../assets/images/Home_Banner_section_1.svg'  
 import { motion, useScroll, useTransform,AnimatePresence} from "framer-motion";
@@ -125,13 +125,29 @@ const HomePage = () => {
        setIndex((prev) => (prev + dir + questiondetails.length) % questiondetails.length);
      };
 
+      const [menuOpen, setMenuOpen] = useState(false);
+
+      useEffect(() => {
+        if (menuOpen) {
+          document.body.classList.add('no-scroll');
+        } else {
+          document.body.classList.remove('no-scroll');
+        }
+        return () => document.body.classList.remove('no-scroll');
+      }, [menuOpen]);
+     
+
+      const menutoggle =()=>{
+        setMenuOpen(!menuOpen)
+      }
+
   return (
    <div className="w-full flex flex-col">
-     <Header />
+     <Header/>
      {/* Section 1 */}
      <div className="relative boxheight pt-[40%] md:pt-[35%] lg:pt-[15%] flex items-end justify-center">
-        <div class="w-[100px] h-[100px] md:w-[150px] md:h-[150px] bg-[#FF0000] rounded-full absolute z-1 top-[55%] left-[40%] lg:left-[38%] translate-x-[-50%] translate-y-[-50%] blur-[100px]  md:blur-[100px]"></div>
-        <div class="w-[125px] h-[125px] md:w-[150px] bg-[#FF0000] rounded-full absolute z-1 top-[35%] left-[70%] lg:left-[65%] translate-x-[-50%] translate-y-[-50%] blur-[125px]  md:blur-[100px]"></div>
+        <div class="w-[100px] h-[100px] md:w-[150px] md:h-[150px] bg-[#FF0000] rounded-full absolute z-1 top-[55%] left-[40%] lg:left-[38%] translate-x-[-50%] translate-y-[-50%] blur-[120px]  md:blur-[120px]"></div>
+        <div class="w-[125px] h-[125px] md:w-[150px] bg-[#FF0000] rounded-full absolute z-1 top-[35%] left-[70%] lg:left-[65%] translate-x-[-50%] translate-y-[-50%] blur-[135px]  md:blur-[120px]"></div>
         <div className="flex flex-col items-center py-10 px-2 gap-1 md:gap-2 justify-center relative">
           <h1 className="font-PlancExtraBold maintitle text-4xl md:text-4xl  lg:text-5xl 2xl:text-6xl text-center">One platform.<br className="block md:hidden" /> Endless possibilities.</h1>
           <h1 className="font-Plancsemibold text-[#5D605E] smalltitl text-lg md:text-xl lg:text-2xl">Connecting cities, empowering people.</h1>
