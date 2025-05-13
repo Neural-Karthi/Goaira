@@ -214,7 +214,7 @@ const Header = (props) => {
                                    <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Company</h1>
                                    <div className="flex flex-col gap-5">
                                       <div>
-                                         <a href="Aboutus" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Us</a>
+                                         <a href="/Aboutus" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Us</a>
                                          <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Carrer</h1>
                                          <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Location</h1>
                                       </div>

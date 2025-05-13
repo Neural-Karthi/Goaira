@@ -17,7 +17,7 @@ const Footer = () => {
                   <div className="flex-1">
                       <h1 className="text-lg lg:text-2xl font-Plancsemibold pb-2 md:pb-4">Company</h1>
                       <div className="flex flex-col gap-1">
-                        <a href="Aboutus" className="text-[14px] md:text-lg font-PlancRegular">Our offerings</a>
+                        <a href="/Aboutus" className="text-[14px] md:text-lg font-PlancRegular">Our offerings</a>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Newsroom</h1>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Investors</h1>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Blog</h1>
