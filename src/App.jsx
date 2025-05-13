@@ -4,6 +4,7 @@ import Home_page from './view/HomePage.jsx'
 import RegisterationPage from './view/RegisterationPage.jsx'; 
 import Footer from './component/Footer.jsx'
 import DownloadSection from './component/DownloadSection.jsx'
+import Aboutus from './view/Aboutus.jsx';
 function App() {
  
   return (
@@ -11,6 +12,8 @@ function App() {
        <Routes>
          <Route path='/' element={<><Home_page /><DownloadSection /><Footer /></>} />
          <Route path='/Registeration' element={<><RegisterationPage /><DownloadSection /><Footer /></>} />
+         <Route path='/Registeration' element={<><RegisterationPage /><DownloadSection /><Footer /></>} />
+         <Route path='/Aboutus' element={<><Aboutus /><DownloadSection /><Footer /></>} />
        </Routes>
      </Router>
   )
