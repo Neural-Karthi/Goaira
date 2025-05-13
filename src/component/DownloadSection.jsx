@@ -13,7 +13,7 @@ const DownloadSection = () => {
               <div className="h-full flex">
                  <div className="w-[200px] md:w-[225px] lg:w-[280px] 2xl:w-[320px]">
                     {
-                       isCustomer ? <img src={Customer_QR} alt="banner_4" className="w-full h-full" /> : <img src={Driver_QR} alt="banner_4" className="w-full h-full" />
+                       isCustomer ? <img src={Customer_QR}  loading="lazy" alt="banner_4" className="w-full h-full" /> : <img src={Driver_QR}  loading="lazy" alt="banner_4" className="w-full h-full" />
                     }
                    
                  </div>

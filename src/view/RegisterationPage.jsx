@@ -87,7 +87,7 @@ const RegisterationPage = () => {
          <div className="flex flex-col gap-4 md:gap-8 py-5 md:py-10">
             <div className="flex flex-col lg:flex-row gap-4 md:gap-8">
               <div className="flex-1 flex flex-col gap-1.5 md:gap-3">
-                   <img src={Goaira_customer_screen} alt="" className="w-full h-full object-cover" />
+                   <img src={Goaira_customer_screen}  loading="lazy" alt="" className="w-full h-full object-cover" />
                </div>
                <div className="flex-1 flex flex-col py-5 gap-1.5 md:gap-3">
                     <div className="">

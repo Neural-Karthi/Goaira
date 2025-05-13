@@ -260,7 +260,7 @@ const Header = (props) => {
                    </div>
                     <div className={`md:w-[90%] lg:w-[70%] 2xl:w-[60%] flex-col cursor-default lg:flex-row py-4 justify-start mr-auto ml-auto  rounded-2xl hidden md:flex`}>
                        <div className="flex-1 flex flex-row gap-5 px-2">
-                          <img src={Social_media_1} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
+                          <img src={Social_media_1}  alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
                           <img src={Social_media_2} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
                           <img src={Social_media_3} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
                           <img src={Social_media_4} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
@@ -287,7 +287,7 @@ const Header = (props) => {
                                  <div className={`transition-all duration-500 ease-in-out flex flex-col gap-5 px-4 overflow-hidden ${ openIndex === idx ? 'max-h-96 opacity-100 pt-5' : 'max-h-0 opacity-0' }`} >
                                      {
                                         faq.sublist.map((items,id)=>(
-                                           <a href={items.link} className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
+                                           <a  onClick={() => {navigate(items.link);setTimeout(() => window.scrollTo(0, 0), 100);}}  className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
                                         )
                                        )
                                      }

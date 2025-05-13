@@ -46,6 +46,7 @@ const Question_component = () => {
                 <img
                   src={Down_arrow}
                   alt="Toggle Answer"
+                  
                   className={`w-8 lg:w-10 transform transition-transform duration-300 ${
                     openIndex === idx ? 'rotate-180' : ''
                   }`}
