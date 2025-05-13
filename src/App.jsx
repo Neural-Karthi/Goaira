@@ -12,7 +12,6 @@ function App() {
        <Routes>
          <Route path='/' element={<><Home_page /><DownloadSection /><Footer /></>} />
          <Route path='/Registeration' element={<><RegisterationPage /><DownloadSection /><Footer /></>} />
-         <Route path='/Registeration' element={<><RegisterationPage /><DownloadSection /><Footer /></>} />
          <Route path='/Aboutus' element={<><Aboutus /><DownloadSection /><Footer /></>} />
        </Routes>
      </Router>
