@@ -18,11 +18,11 @@ const Footer = () => {
                   <div className="flex-1">
                       <h1 className="text-lg lg:text-2xl font-Plancsemibold pb-2 md:pb-4">Company</h1>
                       <div className="flex flex-col gap-1">
-                        <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg font-PlancRegular">Our offerings</button>
+                        <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">About us</button>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Newsroom</h1>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Investors</h1>
                         <h1 className="text-[14px] md:text-lg font-PlancRegular">Blog</h1>
-                        <h1 className="text-[14px] md:text-lg font-PlancRegular">Careers</h1>
+                        <h1 onClick={() => {navigate('/Careers');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Careers</h1>
                       </div>
                   </div>
                   <div className="flex-1">

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useRef} from 'react'
 import Header from '../component/Header.jsx'
 import banner3 from '../assets/images/Registeration_Banner_1.svg'
 import DriverOnboardform from '../component/DriverOnboardform.jsx'
@@ -13,11 +13,25 @@ import Count_1 from '../assets/images/Count_1.svg'
 import Count_2 from '../assets/images/Count_2.svg'
 import Count_3 from '../assets/images/Count_3.svg'
 import Count_4 from '../assets/images/Count_4.svg'
-
+import { useLocation,useNavigate } from "react-router-dom";
 const RegisterationPage = () => {
+  const location = useLocation();
+  const howtobecomedriver = useRef(null);
+  const faq = useRef(null);
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  if (location.hash === "#Become_a_driver") {
+    setTimeout(() => {
+      howtobecomedriver.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100); 
+  }
+  else if (location.hash === "#FAQ") {
+    setTimeout(() => {
+      faq.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }
+}, [location]);
+
+
   return (
     <div>
       <Header type="true" path="Registeration"/>
@@ -82,7 +96,7 @@ const RegisterationPage = () => {
             </div>
          </div>
       </div>
-      <div className="w-full bg-[#F1F3F6] flex items-center justify-center">
+      <div className="w-full bg-[#F1F3F6] flex items-center justify-center"  ref={howtobecomedriver} id="howtobecomedriver">
         <div className="py-5 pt-10 px-5 md:px-0 md:w-[90%] lg:w-[80%] 2xl:w-[70%] mr-auto ml-auto">
          <div className="flex flex-col gap-4 md:gap-8 py-5 md:py-10">
             <div className="flex flex-col lg:flex-row gap-4 md:gap-8">
@@ -141,7 +155,9 @@ const RegisterationPage = () => {
          </div>
       </div>
       </div>
+      <div ref={faq} id="faq"></div>
       <Question_component />
+      
     </div>
     
   )

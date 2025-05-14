@@ -109,8 +109,8 @@ const Header = (props) => {
       link:'/Aboutus'
     },
     {
-      subtitle:'Jobs',
-      link:'/'
+      subtitle:'Careers',
+      link:'/Careers'
     },
     {
       subtitle:'Location',
@@ -176,11 +176,11 @@ const Header = (props) => {
                                 <div>
                                    <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Rides</h1>
                                    <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Rider Safety</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Become a driver</h1>
+                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Become a driver</button>
                                 </div>
                                 <div>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Goaira Drive</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">FAQ</h1>
+                                   <button  onClick={() => {navigate('/Registeration');setopen(false)}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Goaira Drive</button>
+                                   <button onClick={() => {navigate('/Registeration#FAQ');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">FAQ</button>
                                    <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Report a vehicle</h1>
                                 </div>
                              </div>
@@ -190,8 +190,8 @@ const Header = (props) => {
                              <div className="flex flex-col gap-5">
                                 <div>
                                    <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Driver</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Become a driver</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">How it works</h1>
+                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
+                                   <h1 onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">How it works</h1>
                                 </div>
                                 <div>
                                    <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Franchises</h1>
@@ -213,9 +213,9 @@ const Header = (props) => {
                                <div>
                                    <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Company</h1>
                                    <div className="flex flex-col gap-5">
-                                      <div>
-                                         <button onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Us</button>
-                                         <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Carrer</h1>
+                                      <div className="flex flex-col gap-1">
+                                         <button onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">About Us</button>
+                                         <button onClick={() => {navigate('/Careers');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Careers</button>
                                          <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Location</h1>
                                       </div>
                                    </div>
