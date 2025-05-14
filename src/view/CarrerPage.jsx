@@ -76,7 +76,7 @@ const CarrerPage = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-justify text-[14px] md:text-lg">
+            <h1 className="text-justify text-[14px] text-[#585858] md:text-lg">
               {job.Description}
             </h1>
           </div>

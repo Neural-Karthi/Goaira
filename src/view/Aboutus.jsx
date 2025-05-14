@@ -65,7 +65,7 @@ const Aboutus = () => {
             />
              <FeatureBlock 
              image={feature_3}
-             title="Fast Vehicle Onboarding"
+             title="Quick Vehicle Onboarding"
              description="Get your vehicle registered and ready to go in just 10 minutes. Our quick verification process means you spend less time waiting and more time earning."
              reverse={true}
             />

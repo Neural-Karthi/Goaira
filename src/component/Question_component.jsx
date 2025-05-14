@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "How are my earnings calculated?",
     answer:
-      "Your earnings are based on the number of completed trips, distance traveled, and any surge pricing during peak hours. You can view detailed earnings reports in the Goaira Driver app.",
+      "Your earnings are based on the number of completed trips, distance traveled. You can view detailed earnings reports in the Goaira Driver app.",
   },
   {
     question: "What do I do if I encounter an issue during a ride?",
