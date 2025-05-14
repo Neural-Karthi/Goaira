@@ -189,8 +189,8 @@ const Header = (props) => {
                              <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Earn with Goaira</h1>
                              <div className="flex flex-col gap-5">
                                 <div className="flex flex-col">
-                                   <button onClick={() => {navigate('/Registeration');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Driver</button>
-                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
+                                   <button onClick={() => {navigate('/Registeration');setopen(false)}} className="text-[14px] md:text-[16px] text-left font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Driver</button>
+                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] text-left md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
                                    <h1 onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">How it works</h1>
                                 </div>
                                 <div>

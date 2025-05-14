@@ -39,7 +39,7 @@ const Aboutus = () => {
               </div>
                <div className="h-full flex">
                  <div className="md:w-[300px] lg:w-[400px]">
-                   <img src={about_us_banner}  loading="lazy"  loading="lazy" alt="banner_4" className="w-full h-full" />
+                   <img src={about_us_banner}  loading="lazy" alt="banner_4" className="w-full h-full" />
                  </div>
               </div>
            </div>
