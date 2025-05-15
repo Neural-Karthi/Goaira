@@ -34,70 +34,37 @@ const Header = (props) => {
     Title: "Service",
     sublist:[
     {
-      subtitle:'Rides',
-      link:'/'
+      subtitle:'Daily Trips',
+      link:'/#Service'
     },
     {
-      subtitle:'Rides Safety',
-      link:'/'
+      subtitle:'Rental',
+      link:'/#Service'
     },
     {
-      subtitle:'Become a Driver',
-      link:'/Registeration'
+      subtitle:'Outstation',
+      link:'/#Service'
     },
     {
-      subtitle:'Goaira Driver',
-      link:'/Registeration'
-    },
-     {
-      subtitle:'FAQ',
-      link:'/'
-    },
-    {
-      subtitle:'Report a vehicle',
-      link:'/'
-    },
+      subtitle:'Acting Drivers',
+      link:'/#Service'
+    }
    ]
   },
   {
     Title: "Earn with Goaira",
       sublist:[
     {
-      subtitle:'Driver',
-      link:'/'
-    },
-    {
       subtitle:'Become a driver',
       link:'/Registeration'
     },
     {
       subtitle:'How it works',
-      link:'/'
+      link:'/Registeration#Become_a_driver'
     },
     {
       subtitle:'Franchises',
-      link:'/'
-    },
-     {
-      subtitle:'About Goaira Franchises',
-      link:'/'
-    }
-   ]
-  },
-  {
-    Title: "Safety",
-     sublist:[
-    {
-      subtitle:'Safety',
-      link:'/'
-    },
-    {
-      subtitle:'Driver Safety',
-      link:'/'
-    },
-    {
-      subtitle:'Rider safety',
-      link:'/'
+      link:'/Franchise'
     }
    ]
   },
@@ -111,10 +78,6 @@ const Header = (props) => {
     {
       subtitle:'Careers',
       link:'/Careers'
-    },
-    {
-      subtitle:'Location',
-      link:'/'
     }
    ]
   },
@@ -123,11 +86,11 @@ const Header = (props) => {
      sublist:[
     {
       subtitle:'For Riders',
-      link:'/'
+      link:'/https://wa.me/9962924599'
     },
     {
       subtitle:'For Drivers',
-      link:'/'
+      link:'/https://wa.me/9962924599'
     }
    ]
   },
@@ -284,7 +247,7 @@ const Header = (props) => {
                                 </div>
                               </div>
                          ))}
-                         <div className="px-3 py-5 flex flex-col gap-3 ">
+                         <div className="px-3 py-5 pb-32 flex flex-col gap-3 ">
                              <h1 className="text-[#5E6562] subtitle text-[16px]">Your ride, just minutes away!</h1>
                             <button className="w-fit py-3 px-8 rounded-full bg-[#FF0000] font-Plancsemibold text-white text-lg hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
                               Download Goaira App
