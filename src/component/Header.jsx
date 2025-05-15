@@ -240,7 +240,7 @@ const Header = (props) => {
                                  <div className={`transition-all duration-500 ease-in-out flex flex-col gap-5 px-4 overflow-hidden ${ openIndex === idx ? 'max-h-96 opacity-100 pt-5' : 'max-h-0 opacity-0' }`} >
                                      {
                                         faq.sublist.map((items,id)=>(
-                                           <a  onClick={() => {navigate(items.link);setTimeout(() => window.scrollTo(0, 0), 100);}}  className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
+                                           <a  onClick={() => {navigate(items.link);;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}  className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
                                         )
                                        )
                                      }
