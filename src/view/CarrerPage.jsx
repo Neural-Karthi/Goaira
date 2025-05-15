@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CareerPage from '../assets/images/CareerPage.svg';
+import CareerPage from '../assets/images/CareerPage.webp';
 import SearchIcon from '../assets/images/SearchIcon.svg';
 
 import Header from '../component/Header.jsx';

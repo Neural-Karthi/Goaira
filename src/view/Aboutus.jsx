@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{useRef,useEffect} from 'react';
 import aboutusbg from '../assets/images/AboutusBg.svg';
-import about_us_banner from '../assets/images/about_us_banner.svg';
+import about_us_banner from '../assets/images/about_us_banner.webp';
 import feature_1 from '../assets/images/About_us_driver_1.svg';
 import feature_2 from '../assets/images/About_us_driver_2.svg';
 import feature_3 from '../assets/images/About_us_driver_3.svg';
@@ -13,7 +13,21 @@ import feature_9 from '../assets/images/about_us_Consumer_5.svg';
 
 import Header from '../component/Header.jsx';
 import FeatureBlock from '../component/FeatureBlock.jsx'
+import { useLocation,useNavigate } from "react-router-dom";
+
+
 const Aboutus = () => {
+  const location = useLocation();
+  const misson = useRef(null);
+  useEffect(() => {
+  if (location.hash === "#misson") {
+    setTimeout(() => {
+      misson.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100); 
+  }
+ }, [location]);
+
+   
   return (
     <div>
       <Header type="true" path="Registeration" />
@@ -45,8 +59,8 @@ const Aboutus = () => {
            </div>
         </div>
       </div>
-      <div className="py-12 md:py-22 bg-black flex items-center justify-center flex-col gap-3 md:gap-5">
-         <h1 className="text-[26px] md:text-4xl lg:text-5xl 2xl:text-6xl text-center font-Plancsemibold text-white">What We Provide for Drivers</h1>
+      <div className="py-12 md:py-22 bg-black flex items-center justify-center flex-col gap-3 md:gap-5"  ref={misson} id="misson">
+         <h1  name="misson" className="text-[26px] md:text-4xl lg:text-5xl 2xl:text-6xl text-center font-Plancsemibold text-white">What We Provide for Drivers</h1>
          <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">The GOAIRA Driver App puts you in control—manage ride requests,<br className="hidden md:block" /> track payments, and run your driving business with ease, all in one place.</h1>
        
          <div className="px-5 md:px-0 md:w-[75%] lg:w-[70%] 2xl:w-[55%] flex flex-col gap-10 mr-auto ml-auto py-10">

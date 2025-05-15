@@ -138,19 +138,20 @@ const Header = (props) => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  
 
   return (
-    <div className={`absolute top-0 z-10 w-full ${isopen && 'bg-white'}`}>
+    <div className={`absolute top-0 z-10 w-full ${isopen && 'bg-white'} cursor-default`}>
        <div className={`md:w-[90%] lg:w-[80%] 2xl:w-[70%] flex items-center mr-auto ml-auto px-3`}>
            <div className="flex-1 h-[65px] flex items-center">
               {
                props.type === "true" && !isopen ?
-               <Link to="/"><img src={Goairalightlogo} alt="" className="w-[125px] cursor-pointer"/></Link> :  <Link to="/"><img src={Goairadarklogo} alt="" className="w-[125px] cursor-pointer"/></Link>
+               <Link to="/"><img src={Goairalightlogo} onClick={()=>{setopen(false)}} alt="" className="w-[125px] cursor-pointer"/></Link> :  <Link to="/"><img onClick={()=>{setopen(false)}} src={Goairadarklogo} alt="" className="w-[125px] cursor-pointer"/></Link>
               }
            </div>
            <div className="flex-1 h-full flex items-center justify-end gap-5">
                 <div className="items-center flex-row hidden md:flex">
-                   <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button>
+                   <a href="https://wa.me/9962924599" target="_blank">    <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button> </a>
                    <button className={`px-10 py-2 rounded-full  text-[15px]  font-Plancsemibold hover:scale-102 cursor-pointer ${props.path === 'Registeration'  && !isopen ?'bg-black text-white':'bg-[#2F313F] text-white'}`} onClick={()=>{navigate('/Registeration')}}>Register</button>
                 </div>
                 <div>
@@ -173,15 +174,14 @@ const Header = (props) => {
                          <div className="flex-1">
                              <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Service</h1>
                              <div className="flex flex-col gap-5">
-                                <div>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Rides</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Rider Safety</h1>
-                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Become a driver</button>
+                                 <div className="flex flex-col">
+                                   <button onClick={() => {navigate('/#Service');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Daily Trips</button>
+                                   <button onClick={() => {navigate('/#Service');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Rental</button>
+                                   <button onClick={() => {navigate('/#Service');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Outstation</button>
+                                   <button onClick={() => {navigate('/#Service');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Acting Drivers</button>
                                 </div>
                                  <div className="flex flex-col ">
-                                   <button  onClick={() => {navigate('/Registeration');setopen(false)}}  className="text-[14px] md:text-[16px] text-left font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Goaira Drive</button>
                                    <button onClick={() => {navigate('/Registeration#FAQ');setopen(false)}} className="text-[14px] md:text-[16px] text-left font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">FAQ</button>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Report a vehicle</h1>
                                 </div>
                              </div>
                          </div>
@@ -189,51 +189,41 @@ const Header = (props) => {
                              <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Earn with Goaira</h1>
                              <div className="flex flex-col gap-5">
                                 <div className="flex flex-col">
-                                   <button onClick={() => {navigate('/Registeration');setopen(false)}} className="text-[14px] md:text-[16px] text-left font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Driver</button>
-                                   <button onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] text-left md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
+                                   <button onClick={() => {navigate('/Registeration');setopen(false)}} className="text-[14px] text-left md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
                                    <h1 onClick={() => {navigate('/Registeration#Become_a_driver');setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">How it works</h1>
                                 </div>
                                 <div>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Franchises</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Goaira Franchises</h1>
+                                   <button  onClick={() => {navigate('/Franchise');setopen(false)}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Franchises</button>
+                                   {/* <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Goaira Franchises</h1> */}
                                 </div>
                              </div>
                          </div>
-                            <div className="flex-1">
-                             <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Safety</h1>
-                             <div className="flex flex-col gap-5">
-                                <div>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Safety</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Driver Safety</h1>
-                                   <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Rider Safety</h1>
-                                </div>
-                             </div>
-                         </div>
-                             <div className=" flex flex-col gap-5">
+                         <div className=" flex-1 flex flex-col gap-5">
                                <div>
                                    <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Company</h1>
                                    <div className="flex flex-col gap-5">
                                       <div className="flex flex-col gap-1">
                                          <button onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">About Us</button>
                                          <button onClick={() => {navigate('/Careers');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Careers</button>
-                                         <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">Location</h1>
                                       </div>
                                    </div>
                                </div>
-                               <div>
-                                   <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Support</h1>
-                                   <div className="flex flex-col gap-5">
-                                      <div>
-                                         <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</h1>
-                                         <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</h1>
-                                      </div>
-                                   </div>
-                               </div>
+                               
                          </div>
+                          <div className="">
+                            <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Support</h1>
+                             <div className="flex flex-col gap-5">
+                                <div className="flex flex-col  gap-1">
+                                   <a href="https://wa.me/9962924599" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</a>
+                                   <a href="https://wa.me/9962924599" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</a>
+                                </div>
+                             </div>
+                         </div>
+                             
                       </div>
                   </div>
-                   <div className={`md:w-[90%] lg:w-[70%] 2xl:w-[60%] flex flex-col lg:flex-row gap-4 justify-start mr-auto ml-auto  rounded-2xl hidden md:flex `}>
-                      <div className="w-full lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] px-8 py-10 lg:py-5  rounded-2xl hover:scale-101 ">
+                   <div className={`md:w-[90%] lg:w-[70%] 2xl:w-[60%] flex-col lg:flex-row gap-4 justify-start mr-auto ml-auto  rounded-2xl hidden md:flex `}>
+                      <div onClick={() => {navigate('/Registeration');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="w-full lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] px-8 py-10 cursor-pointer lg:py-5  rounded-2xl hover:scale-101 ">
                          <div className="flex items-start">
                             <img src={Driver_icon} alt="" className=""/>
                          </div>
@@ -245,7 +235,7 @@ const Header = (props) => {
                             <h1 className="text-[14px] md:text-[16px] w-[80%] font-PlancRegular text-[#5E6562] cursor-pointer">Earn on Your Terms. Drive When You Want.</h1>
                          </div>
                       </div>
-                      <div className="w-full  lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] px-8 py-10 lg:py-5  rounded-2xl hover:scale-101">
+                      <div className="w-full  lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] cursor-pointer px-8 py-10 lg:py-5  rounded-2xl hover:scale-101">
                          <div className="flex items-start">
                             <img src={handshake} alt="" className=""/>
                          </div>
@@ -260,11 +250,11 @@ const Header = (props) => {
                    </div>
                     <div className={`md:w-[90%] lg:w-[70%] 2xl:w-[60%] flex-col cursor-default lg:flex-row py-4 justify-start mr-auto ml-auto  rounded-2xl hidden md:flex`}>
                        <div className="flex-1 flex flex-row gap-5 px-2">
-                          <img src={Social_media_1}  alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
-                          <img src={Social_media_2} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
-                          <img src={Social_media_3} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
-                          <img src={Social_media_4} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
-                          <img src={Social_media_5} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/>
+                         <a href="https://www.instagram.com/goaira.services?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><img src={Social_media_1} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/></a>
+                         <a href="https://www.facebook.com/goaira.services?mibextid=ZbWKwL" target="_blank"><img src={Social_media_2} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/></a>
+                         <a href="https://x.com/goaira_t?t=lVcXah7yIaavgwGtozLyKA&s=09" target="_blank"><img src={Social_media_3} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/></a>
+                         <a href="https://youtube.com/@goaira.services5120?si=Inb " target="_blank"><img src={Social_media_4} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/></a>
+                         <a href="https://www.linkedin.com/company/goaira-technologies/" target="_blank"><img src={Social_media_5} alt="social_media" className="w-[24px] h-[24px] cursor-pointer"/></a>
                        </div>
                        <div className="flex-1 flex flex-col items-end text-[#A1A8AF] gap-2 px-2 py-4">
                            <div className="flex flex-row items-center text-[14px] gap-5 px-2">

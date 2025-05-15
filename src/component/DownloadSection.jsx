@@ -8,7 +8,7 @@ const DownloadSection = () => {
         setIsCustomer(!isCustomer)
     }
   return (
-    <div className="w-full flex flex-col items-center py-14 2xl:py-22 bg-black">
+    <div className="w-full flex flex-col items-center py-14 2xl:py-22 cursor-default bg-black">
        <div className="px-5 md:px-0 w-full md:w-[80%] lg:w-[55%] 2xl:w-[45%] flex flex-col md:flex-row items-center gap-5 md:gap-10 justify-center mr-auto ml-auto">
            <div className="h-full flex">
               <div className="w-[200px] md:w-[225px] lg:w-[280px] 2xl:w-[320px]">

@@ -1,6 +1,6 @@
 import React,{useEffect,useRef} from 'react'
 import Header from '../component/Header.jsx'
-import banner3 from '../assets/images/Registeration_Banner_1.svg'
+import banner3 from '../assets/images/Registeration_Banner_1.webp'
 import DriverOnboardform from '../component/DriverOnboardform.jsx'
 import icon_1 from '../assets/images/Registration_Icon_1.svg'
 import icon_2 from '../assets/images/Registration_Icon_2.svg'
@@ -13,7 +13,27 @@ import Count_1 from '../assets/images/Count_1.svg'
 import Count_2 from '../assets/images/Count_2.svg'
 import Count_3 from '../assets/images/Count_3.svg'
 import Count_4 from '../assets/images/Count_4.svg'
-import { useLocation,useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+
+const faqs = [
+  {
+    question: "How do I accept a ride request?",
+    answer:
+      "Open the Goaira Driver app. When a ride request appears on your screen, tap the 'Accept' button. The app will then provide navigation to the passenger’s pickup location.",
+  },
+  {
+    question: "How are my earnings calculated?",
+    answer:
+      "Your earnings are based on the number of completed trips, distance traveled. You can view detailed earnings reports in the Goaira Driver app.",
+  },
+  {
+    question: "What do I do if I encounter an issue during a ride?",
+    answer:
+      "If you face any issues during a ride, use the in-app support to report the problem or call the Goaira support helpline. For emergencies, use the SOS button available in the app.",
+  },
+];
+
 const RegisterationPage = () => {
   const location = useLocation();
   const howtobecomedriver = useRef(null);
@@ -156,8 +176,7 @@ const RegisterationPage = () => {
       </div>
       </div>
       <div ref={faq} id="faq"></div>
-      <Question_component />
-      
+      <Question_component questions={faqs} type="Driver"/>
     </div>
     
   )

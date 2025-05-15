@@ -1,26 +1,10 @@
 import React, { useState } from 'react';
 import Down_arrow from '../assets/images/Down_arrow.svg';
 
-const faqs = [
-  {
-    question: "How do I accept a ride request?",
-    answer:
-      "Open the Goaira Driver app. When a ride request appears on your screen, tap the 'Accept' button. The app will then provide navigation to the passenger’s pickup location.",
-  },
-  {
-    question: "How are my earnings calculated?",
-    answer:
-      "Your earnings are based on the number of completed trips, distance traveled. You can view detailed earnings reports in the Goaira Driver app.",
-  },
-  {
-    question: "What do I do if I encounter an issue during a ride?",
-    answer:
-      "If you face any issues during a ride, use the in-app support to report the problem or call the Goaira support helpline. For emergencies, use the SOS button available in the app.",
-  },
-];
 
 
-const Question_component = () => {
+
+const Question_component = (props) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -30,10 +14,10 @@ const Question_component = () => {
   return (
     <div className="py-12">
       <div className="py-10  flex flex-col items-center justify-center">
-        <h1 className="text-3xl md:text-4xl font-Plancsemibold text-center">Driver Support FAQS</h1>
+        <h1 className="text-3xl md:text-4xl font-Plancsemibold text-center">{props.type=="Driver"?'Driver':'GoAira Franchise'} Support FAQS</h1>
         <h1 className="text-sm md:text-xl py-1 md:py-2">Checkout the below</h1>
         <div className="w-[90%] md:w-[75%] pt-10 lg:w-[60%] 2xl:w-[50%] space-y-4">
-          {faqs.map((faq, idx) => (
+          {props.questions.map((faq, idx) => (
             <div
               key={idx}
               className="bg-white p-5 md:p-8 border border-[#AAAAAA] rounded-2xl md:rounded-4xl transition-transform duration-300 ease-in-out"
