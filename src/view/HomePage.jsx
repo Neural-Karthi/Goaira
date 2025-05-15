@@ -197,7 +197,7 @@ const HomePage = () => {
                     <h1 className="text-3xl md:text-4xl font-Plancsemibold text-white text-shadow ">{items.title}</h1>
                     <h1 className="text-2xl w-[90%] font-Plancsemibold text-white text-shadow ">{items.subtitle}</h1> 
                        <a href="https://play.google.com/store/apps/details?id=com.goaira.customer" target="_blank">
-                    <button className={`text-lg font-Plancsemibold py-2.5 rounded-2xl w-full max-w-[180px] ${idx == 0 ?'bg-[#ffffff]':'bg-[#FE1527] text-white'}`}>{items.button}</button>
+                    <button className={`text-lg font-Plancsemibold py-2.5 rounded-2xl w-full max-w-[180px] cursor-pointer ${idx == 0 ?'bg-[#ffffff]':'bg-[#FE1527] text-white'}`}>{items.button}</button>
                     </a>
                 </div>
              </div>

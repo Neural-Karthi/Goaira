@@ -235,7 +235,7 @@ const Header = (props) => {
                             <h1 className="text-[14px] md:text-[16px] w-[80%] font-PlancRegular text-[#5E6562] cursor-pointer">Earn on Your Terms. Drive When You Want.</h1>
                          </div>
                       </div>
-                      <div className="w-full  lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] cursor-pointer px-8 py-10 lg:py-5  rounded-2xl hover:scale-101">
+                      <div onClick={() => {navigate('/Franchise');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="w-full lg:max-w-[450px] flex gap-5 bg-[#EFF1F3] cursor-pointer px-8 py-10 lg:py-5  rounded-2xl hover:scale-101">
                          <div className="flex items-start">
                             <img src={handshake} alt="" className=""/>
                          </div>
