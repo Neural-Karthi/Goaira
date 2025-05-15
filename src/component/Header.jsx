@@ -86,11 +86,11 @@ const Header = (props) => {
      sublist:[
     {
       subtitle:'For Riders',
-      link:'/https://wa.me/9962924599'
+      link:'https://wa.me/9962924599'
     },
     {
       subtitle:'For Drivers',
-      link:'/https://wa.me/9962924599'
+      link:'https://wa.me/9962924599'
     }
    ]
   },
@@ -238,12 +238,21 @@ const Header = (props) => {
                                    <img src={Down_arrow} alt="Toggle Answer" className={`w-6 transform transition-transform duration-300 ${ openIndex === idx ? 'rotate-180' : '' }`}/>
                                  </div>
                                  <div className={`transition-all duration-500 ease-in-out flex flex-col gap-5 px-4 overflow-hidden ${ openIndex === idx ? 'max-h-96 opacity-100 pt-5' : 'max-h-0 opacity-0' }`} >
+                                     
                                      {
+                                      faq.Title === "Support" ? 
+                                        faq.sublist.map((items,id)=>(
+                                           <a  href={items.link}  className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
+                                        )
+                                       )
+                                       :
                                         faq.sublist.map((items,id)=>(
                                            <a  onClick={() => {navigate(items.link);;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}  className="font-PlancRegular text-[#5E6562] transition-colors text-lg duration-300" > {items.subtitle}</a>
                                         )
                                        )
                                      }
+                                     
+                                     
                                 </div>
                               </div>
                          ))}
