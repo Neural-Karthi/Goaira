@@ -4,9 +4,9 @@ import Question_component from '../component/Question_component.jsx'
 const FAQ = () => {
     const faqs = [
   {
-    question: "What type of services Goaira provide?",
+    question: "What type of services GoAira provide?",
     answer:
-      "Goaira feels proud to serve all platforms in one application. We have fleet services and Sarathy (driver/chauffeur) and many services in nearest future.",
+      "GoAira feels proud to serve all platforms in one application. We have fleet services and Sarathy (driver/chauffeur) and many services in nearest future.",
   },
   {
     question: "Is booking fleet services are easy?",

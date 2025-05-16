@@ -45,7 +45,7 @@ const Header = (props) => {
           ]
          },
          {
-           Title: "Earn with Goaira",
+           Title: "Earn with GoAira",
              sublist:[
            {
              subtitle:'Become a driver',
@@ -79,11 +79,11 @@ const Header = (props) => {
             sublist:[
            {
              subtitle:'For Riders',
-             link:'https://wa.me/9962924599'
+             link:'https://wa.me/9514295152'
            },
            {
              subtitle:'For Drivers',
-             link:'https://wa.me/9962924599'
+             link:'https://wa.me/9514295152'
            }
           ]
          },
@@ -113,7 +113,7 @@ const Header = (props) => {
            </div>
            <div className="flex-1 h-full flex items-center justify-end gap-5">
                 <div className="items-center flex-row hidden md:flex">
-                   <a href="https://wa.me/9962924599" target="_blank">    <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button> </a>
+                   <a href="https://wa.me/9514295152" target="_blank">    <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button> </a>
                    <button className={`px-10 py-2 rounded-full  text-[15px]  font-Plancsemibold hover:scale-102 cursor-pointer ${props.path === 'Registeration'  && !isopen ?'bg-black text-white':'bg-[#2F313F] text-white'}`} onClick={()=>{navigate('/Registeration')}}>Register</button>
                 </div>
                 <div>
@@ -148,7 +148,7 @@ const Header = (props) => {
                              </div>
                          </div>
                              <div className="flex-1">
-                             <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Earn with Goaira</h1>
+                             <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Earn with GoAira</h1>
                              <div className="flex flex-col gap-5">
                                 <div className="flex flex-col">
                                    <button onClick={() => {navigate('/Registeration');setopen(false)}} className="text-[14px] text-left md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer" >Become a driver</button>
@@ -156,7 +156,7 @@ const Header = (props) => {
                                 </div>
                                 <div>
                                    <button  onClick={() => {navigate('/Franchise');setopen(false)}}  className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] text-left hover:text-black cursor-pointer">Franchises</button>
-                                   {/* <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About Goaira Franchises</h1> */}
+                                   {/* <h1 className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">About GoAira Franchises</h1> */}
                                 </div>
                              </div>
                          </div>
@@ -176,8 +176,8 @@ const Header = (props) => {
                             <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Support</h1>
                              <div className="flex flex-col gap-5">
                                 <div className="flex flex-col  gap-1">
-                                   <a href="https://wa.me/9962924599" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</a>
-                                   <a href="https://wa.me/9962924599" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</a>
+                                   <a href="https://wa.me/9514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</a>
+                                   <a href="https://wa.me/9514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</a>
                                 </div>
                              </div>
                          </div>
@@ -203,10 +203,10 @@ const Header = (props) => {
                          </div>
                          <div className="flex flex-1 flex-col">
                             <div className="flex flex-1">
-                               <h1 className="text-lg lg:text-xl font-Plancsemibold flex-1">Goaira Business</h1>
+                               <h1 className="text-lg lg:text-xl font-Plancsemibold flex-1">GoAira Business</h1>
                                <img src={arrow} alt="" className="w-[28px]"/>
                             </div>
-                            <h1 className="text-[14px] md:text-[16px] w-[80%] font-PlancRegular text-[#5E6562] cursor-pointer">Scale Up with Goaira. Start Your Franchise and Drive Growth.</h1>
+                            <h1 className="text-[14px] md:text-[16px] w-[80%] font-PlancRegular text-[#5E6562] cursor-pointer">Scale Up with GoAira. Start Your Franchise and Drive Growth.</h1>
                          </div>
                       </div>
                    </div>
@@ -225,7 +225,7 @@ const Header = (props) => {
                                <h1 className="cursor-pointer" onClick={() => {navigate('/Terms-and-Conditions');;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}>Terms</h1>
                            </div>
                             <div className="flex-1 flex flex-row text-right gap-5 px-2">
-                               <h1 className="text-[14px]">All information is subject to specific conditions.<br />© 2025 GOAIRA. All rights reserved</h1>
+                               <h1 className="text-[14px]">All information is subject to specific conditions.<br />© 2025 GoAira. All rights reserved</h1>
                            </div>
                        </div>
                     </div>
@@ -259,7 +259,7 @@ const Header = (props) => {
                              <h1 className="text-[#5E6562] subtitle text-[16px]">Your ride, just minutes away!</h1>
                                 <a href="https://play.google.com/store/apps/details?id=com.goaira.customer" target="_blank" className="w-full">
                             <button className="w-fit py-3 px-8 rounded-full bg-[#FF0000] font-Plancsemibold text-white text-lg hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
-                              Download Goaira App
+                              Download GoAira App
                             </button>
                             </a>
                          </div>

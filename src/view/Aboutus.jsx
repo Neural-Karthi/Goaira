@@ -34,7 +34,7 @@ const Aboutus = () => {
          <div className="w-full flex flex-col md:pt-14 lg:flex-row px-5 md:w-[90%] lg:w-[80%] 2xl:w-[70%] mr-auto ml-auto">
               <div className="lg:flex-1 md:px-0 flex pt-24 pb-12  flex-col items-end justify-end xs:px-5">
                  <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-Plancsemibold text-white text-center lg:text-right  mr-auto ml-auto lg:w-full">Who we are</h1>
-                 <h1 className="text-2xl font-PlancRegular text-[#aeafaf]  text-center w-full lg:text-right mr-auto ml-auto">The Goaira Story</h1>
+                 <h1 className="text-2xl font-PlancRegular text-[#aeafaf]  text-center w-full lg:text-right mr-auto ml-auto">The GoAira Story</h1>
               </div>
          </div>
       </div>
@@ -60,7 +60,7 @@ const Aboutus = () => {
       </div>
       <div className="py-12 md:py-22 bg-black flex items-center justify-center flex-col gap-3 md:gap-5"  ref={misson} id="misson">
          <h1  name="misson" className="text-[26px] md:text-4xl lg:text-5xl 2xl:text-6xl text-center font-Plancsemibold text-white">What We Provide for Drivers</h1>
-         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">The GOAIRA Driver App puts you in control—manage ride requests,<br className="hidden md:block" /> track payments, and run your driving business with ease, all in one place.</h1>
+         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">The GoAira Driver App puts you in control—manage ride requests,<br className="hidden md:block" /> track payments, and run your driving business with ease, all in one place.</h1>
        
          <div className="px-5 md:px-0 md:w-[75%] lg:w-[70%] 2xl:w-[55%] flex flex-col gap-10 mr-auto ml-auto py-10">
             <FeatureBlock 
@@ -72,7 +72,7 @@ const Aboutus = () => {
              <FeatureBlock 
              image={feature_2}
              title="Zero Registration Fees"
-             description="Start earning with GOAIRA without any upfront costs. We believe in empowering drivers, not charging them."
+             description="Start earning with GoAira without any upfront costs. We believe in empowering drivers, not charging them."
              reverse={true}
              swap={true}
             />
@@ -93,7 +93,7 @@ const Aboutus = () => {
       </div>
       <div className="py-12 md:py-22 flex items-center justify-center flex-col gap-3 md:gap-5">
          <h1 className="text-[26px] md:text-4xl lg:text-5xl 2xl:text-6xl text-center font-Plancsemibold text-black">What We Provide for Customers</h1>
-         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">The GOAIRA Driver App puts you in control—manage ride requests,<br className="hidden md:block" /> track payments, and run your driving business with ease, all in one place.</h1>
+         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">The GoAira Driver App puts you in control—manage ride requests,<br className="hidden md:block" /> track payments, and run your driving business with ease, all in one place.</h1>
        
          <div className="px-5 md:px-0 md:w-[75%] lg:w-[70%] 2xl:w-[55%] flex flex-col gap-10 mr-auto ml-auto py-10">
             <FeatureBlock 
@@ -121,7 +121,7 @@ const Aboutus = () => {
              <FeatureBlock 
              image={feature_8}
              title="Chauffeur and Assistant Booking Options"
-             description="Book a professional chauffeur or even an assistant for a more personalized experience with GOAIRA."
+             description="Book a professional chauffeur or even an assistant for a more personalized experience with GoAira."
              reverse={true}
              swap={true}
              color={true}

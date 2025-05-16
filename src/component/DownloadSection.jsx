@@ -20,7 +20,7 @@ const DownloadSection = () => {
            <div className="flex-1 w-full h-full flex flex-col text-center justify-center gap-1">
                <div className="md:py-3 h-full flex items-center justify-center flex-col">
                   <h1 className="text-2xl md:text-2xl lg:text-3xl 2xl:text-4xl font-Plancsemibold lg:w-[90%] pt-2 text-white">Download our apps</h1>
-                  <h1 className="font-PlancRegular subtitle text-center text-lg md:text-xl 2xl:text-2xl lg:w-[90%] pt-2 text-[#DADADA]">Just scan & go — download the <br/> Goaira app now!</h1>
+                  <h1 className="font-PlancRegular subtitle text-center text-lg md:text-xl 2xl:text-2xl lg:w-[90%] pt-2 text-[#DADADA]">Just scan & go — download the <br/> GoAira app now!</h1>
                </div>
                <div className="pt-5 md:pt-4 md:py-3 flex items-center justify-center h-full">
                   <h1 className="text-lg md:text-xl lg:text-2xl font-Plancsemibold lg:w-[90%] pt-2 text-white">The fast, affordable way to ride.</h1>

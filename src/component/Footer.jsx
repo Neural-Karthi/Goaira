@@ -52,7 +52,7 @@ const Footer = () => {
                  
                </div>
                <div className="flex flex-row items-center text-[14px] gap-5 px-2">
-                   <h1 className="text-[14px] text-right">All information is subject to specific conditions.<br />© 2025 GOAIRA. All rights reserved</h1>
+                   <h1 className="text-[14px] text-right">All information is subject to specific conditions.<br />© 2025 GoAira. All rights reserved</h1>
                </div>
            </div>
         </div>

@@ -20,17 +20,17 @@ const faqs = [
   {
     question: "How do I accept a ride request?",
     answer:
-      "Open the Goaira Driver app. When a ride request appears on your screen, tap the 'Accept' button. The app will then provide navigation to the passenger’s pickup location.",
+      "Open the GoAira Driver app. When a ride request appears on your screen, tap the 'Accept' button. The app will then provide navigation to the passenger’s pickup location.",
   },
   {
     question: "How are my earnings calculated?",
     answer:
-      "Your earnings are based on the number of completed trips, distance traveled. You can view detailed earnings reports in the Goaira Driver app.",
+      "Your earnings are based on the number of completed trips, distance traveled. You can view detailed earnings reports in the GoAira Driver app.",
   },
   {
     question: "What do I do if I encounter an issue during a ride?",
     answer:
-      "If you face any issues during a ride, use the in-app support to report the problem or call the Goaira support helpline. For emergencies, use the SOS button available in the app.",
+      "If you face any issues during a ride, use the in-app support to report the problem or call the GoAira support helpline. For emergencies, use the SOS button available in the app.",
   },
 ];
 
@@ -62,7 +62,7 @@ const RegisterationPage = () => {
         <div className="w-full flex flex-col md:pt-14 lg:flex-row md:w-[90%] px-5 lg:w-[80%]  mr-auto ml-auto 2xl:w-[70%]">
              <div className="lg:flex-1 gap-2 lg:gap-4 md:px-0 flex pt-24 pb-12 flex-col lg:items-start xs:px-5">
                 <h1 className="text-3xl md:text-5xl lg:text-4xl 2xl:text-5xl font-Plancsemibold text-white  text-center lg:text-left  mr-auto ml-auto lg:w-full md:pr-16">Earn money by driving with GoAira</h1>
-                <h1 className="text-[16px] md:text-lg 2xl:text-2xl font-PlancRegular text-[#dbdbdb]  text-center lg:text-left md:w-[75%] mr-auto ml-auto  lg:w-full md:pr-16">Join Goaira as a driver, choose your own hours, and earn on your terms!</h1>
+                <h1 className="text-[16px] md:text-lg 2xl:text-2xl font-PlancRegular text-[#dbdbdb]  text-center lg:text-left md:w-[75%] mr-auto ml-auto  lg:w-full md:pr-16">Join GoAira as a driver, choose your own hours, and earn on your terms!</h1>
              </div>
              <DriverOnboardform />
         </div>
@@ -70,8 +70,8 @@ const RegisterationPage = () => {
 
       <div className="py-5 pt-18 px-5 md:w-[90%] lg:w-[80%] 2xl:w-[70%]  border-b border-[#b5bbb8] mr-auto ml-auto">
          <div className="">
-             <h1 className="text-2xl md:text-3xl font-Plancsemibold text-black">Why choose Goaira?</h1>
-             <h1 className="text-[#5E6562] text-[16px] md:text-xl py-2 font-PlancRegular">Drive when you want, earn as much as you need <br className="hidden md:block" />— Goaira fits your lifestyle</h1>
+             <h1 className="text-2xl md:text-3xl font-Plancsemibold text-black">Why choose GoAira?</h1>
+             <h1 className="text-[#5E6562] text-[16px] md:text-xl py-2 font-PlancRegular">Drive when you want, earn as much as you need <br className="hidden md:block" />— GoAira fits your lifestyle</h1>
          </div>
          <div className="flex flex-col gap-4 md:gap-8 py-5 md:py-10">
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
@@ -111,7 +111,7 @@ const RegisterationPage = () => {
                <div className="flex-1 flex flex-col gap-1.5 md:gap-3">
                   <img src={icon_5} alt="" className="w-8"/>
                   <h1 className="text-xl md:text-2xl font-Plancsemibold">2.Required documents of vehicle to be uploaded</h1>
-                  <h1 className="text-[16px] md:text-lg 2xl:text-xl font-PlancRegular text-[#5E6562]  lg:w-full md:pr-16">Required documents may differ based on where you’re driving with Goaira</h1>
+                  <h1 className="text-[16px] md:text-lg 2xl:text-xl font-PlancRegular text-[#5E6562]  lg:w-full md:pr-16">Required documents may differ based on where you’re driving with GoAira</h1>
                </div>
             </div>
          </div>
@@ -136,7 +136,7 @@ const RegisterationPage = () => {
                            </div>
                             <div className="flex-1">
                              <h1 className="text-xl  md:text-2xl font-Plancsemibold text-black">Accept a Ride Request</h1>
-                             <h1 className="text-[#5E6562] text-[16px] md:text-lg pt-1 font-PlancRegular 2xl:w-[80%]">The Goaira Driver app will automatically find passengers for you in your area.</h1>
+                             <h1 className="text-[#5E6562] text-[16px] md:text-lg pt-1 font-PlancRegular 2xl:w-[80%]">The GoAira Driver app will automatically find passengers for you in your area.</h1>
                            </div>
                         </div>
                         {/* Count - 2 */}

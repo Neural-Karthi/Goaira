@@ -84,17 +84,17 @@ const HomePage = () => {
      {
         smalltitle:"One Platform, Every Journey",
         title:"Designed to Empower People and Cities",
-        description:"Goaira is redefining city travel with smarter, data-driven transport solutions—making mobility safer, faster, and for everyone."
+        description:"GoAira is redefining city travel with smarter, data-driven transport solutions—making mobility safer, faster, and for everyone."
       },
       {
         smalltitle:"Moving with purpose, not pollution.",
-        title:"Goaira — Your city, your ride, your way",
-        description:"From cabs to future-ready rides, Goaira connects you to cleaner, smarter, and more"
+        title:"GoAira — Your city, your ride, your way",
+        description:"From cabs to future-ready rides, GoAira connects you to cleaner, smarter, and more"
       },
       {
         smalltitle:"Designed for the way you move.",
-        title:"Goaira — Smarter rides, simpler life",
-        description:"Whether it's a quick trip or a daily commute, Goaira brings you flexible, eco-friendly travel"
+        title:"GoAira — Smarter rides, simpler life",
+        description:"Whether it's a quick trip or a daily commute, GoAira brings you flexible, eco-friendly travel"
       }
     ]
 
@@ -163,11 +163,11 @@ const HomePage = () => {
         <div className="flex flex-col items-center py-10 px-2 gap-1 md:gap-2 justify-center relative">
           <h1 className="font-PlancExtraBold maintitle text-4xl md:text-4xl  lg:text-5xl 2xl:text-6xl text-center">One platform.<br className="block md:hidden" /> Endless possibilities.</h1>
           <h1 className="font-Plancsemibold text-[#5D605E] smalltitl text-lg md:text-xl lg:text-2xl">Connecting Cities, Empowering People.</h1>
-          <h1 className="font-Plancmedium text-[#5E6562] subtitle text-[16px] md:text-2xl lg:text-xl text-center">Fast rides, fast deliveries, all in one app.<br /> Goaira gets you there, fast.</h1>
+          <h1 className="font-Plancmedium text-[#5E6562] subtitle text-[16px] md:text-2xl lg:text-xl text-center">Fast rides, fast deliveries, all in one app.<br /> GoAira gets you there, fast.</h1>
           <div className="w-full flex items-center justify-center py-2 md:py-5">
              <a href="https://play.google.com/store/apps/details?id=com.goaira.customer" target="_blank" className="w-full flex items-center justify-center">
              <button className="w-full max-w-[180px] md:max-w-[220px] py-3 border bg-[#FF0000] font-Plancsemibold text-white text-sm md:text-lg rounded-xl hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
-               Get Goaira
+               Get GoAira
              </button>
              </a>
           </div>
@@ -186,7 +186,7 @@ const HomePage = () => {
        <div className="h-full mr-auto ml-auto">
          <div className="md:pl-[10%] px-5 md:px-0 pb-4">
            <h1 className="text-3xl md:text-4xl font-Plancsemibold py-2 ">Our Services.</h1>
-           <h1 className=" text-[#5E6562] font-PlancRegular text-[15px] md:text-lg md:w-[45%]">Services, products, and features may vary by region. Some options listed may not be available in your local Goaira app.</h1>
+           <h1 className=" text-[#5E6562] font-PlancRegular text-[15px] md:text-lg md:w-[45%]">Services, products, and features may vary by region. Some options listed may not be available in your local GoAira app.</h1>
          </div>
          <div ref={scrollContainerRef} className="flex flex-row items-center md:pl-[10%] px-5 py-3 pr-[3%] overflow-x-auto gap-5 no-scrollbar scroll-smooth">
            {Object.values(servicedetails).map((items, idx) => (
@@ -218,7 +218,7 @@ const HomePage = () => {
      </div>
      <div className="py-12 md:py-22 bg-black flex items-center justify-center flex-col gap-3 md:gap-5">
          <h1 className="text-3xl md:text-6xl lg:text-6xl 2xl:text-7xl text-center font-Plancsemibold text-white">Empowering Mobility,<br /> Connecting People.</h1>
-         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">Goaira is redefining city travel with smarter, data-driven transport <br className="hidden md:block" />solutions—making mobility safer, faster, and for everyone.</h1>
+         <h1 className="font-Plancsemibold px-4 text-[#5D605E] smalltitl text-[14px] md:text-xl lg:text-2xl text-center">GoAira is redefining city travel with smarter, data-driven transport <br className="hidden md:block" />solutions—making mobility safer, faster, and for everyone.</h1>
          <div className="w-full h-[300px] flex flex-col items-center justify-center py-2 md:py-5 cursor-default">
              <div className="w-[85%] lg:w-[75%] xl:w-[70%] 2xl:w-[55%] py-8">
                <AnimatePresence custom={direction} mode="wait">
@@ -255,8 +255,8 @@ const HomePage = () => {
      <div className="w-full bg-[#FF0000] flex flex-col items-center pt-12 md:pt-16 ">
         <div className="w-full flex flex-col items-center justify-center px-5 gap-2 md:gap-5">
            <h1 className="font-Plancsemibold text-[#DADADA] smalltitl text-lg md:text-xl lg:text-2xl">About us</h1>
-           <h1 className="text-3xl md:text-6xl lg:text-6xl 2xl:text-7xl text-center font-Plancsemibold text-white">Goaira is India’s <br/> All-In-One ride solution.</h1>
-           <h1 className="font-PlancRegular text-[#DADADA] subtitle text-[14px] md:text-2xl lg:text-xl text-center w-[95%] lg:w-[65%] xl:w-[50%]">Goaira is building people-first cities with smarter, shared mobility — from rides and cargo to emergency transport and daily essentials.</h1>
+           <h1 className="text-3xl md:text-6xl lg:text-6xl 2xl:text-7xl text-center font-Plancsemibold text-white">GoAira is India’s <br/> All-In-One ride solution.</h1>
+           <h1 className="font-PlancRegular text-[#DADADA] subtitle text-[14px] md:text-2xl lg:text-xl text-center w-[95%] lg:w-[65%] xl:w-[50%]">GoAira is building people-first cities with smarter, shared mobility — from rides and cargo to emergency transport and daily essentials.</h1>
            <div className="w-full flex items-center justify-center py-2 md:py-5">
              <button onClick={() => {Navigate('/Aboutus#misson');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="w-full max-w-[180px] md:max-w-[220px] py-3 bg-[#000000] font-Plancsemibold text-white text-sm md:text-lg rounded-xl hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
                Our Mission
@@ -275,10 +275,10 @@ const HomePage = () => {
            <div className="w--full  flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 lg:gap-16 py-2 md:py-5">
               <div className="flex-1 h-full flex flex-col justify-center gap-1">
                  <div className="py-3">
-                    <h1 className="text-[18px] md:text-lg lg:text-2xl font-Plancsemibold text-[#B9BCBF]">Book Your Ride with Goaira</h1>
+                    <h1 className="text-[18px] md:text-lg lg:text-2xl font-Plancsemibold text-[#B9BCBF]">Book Your Ride with GoAira</h1>
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-Plancsemibold lg:w-[90%] pt-2">Fast, Reliable, and Affordable Rides</h1>
                  </div>
-                 <h1 className="text-lg md:text-[16px] lg:text-xl font-PlancRegular text-[#82898D] lg:w-[90%]">Whether it's a quick trip across town or a long-distance journey, Goaira gets you there safely, comfortably, and on time—every time.</h1>
+                 <h1 className="text-lg md:text-[16px] lg:text-xl font-PlancRegular text-[#82898D] lg:w-[90%]">Whether it's a quick trip across town or a long-distance journey, GoAira gets you there safely, comfortably, and on time—every time.</h1>
                 <div className="py-4">
                    <a href="https://play.google.com/store/apps/details?id=com.goaira.customer" target="_blank" className="w-full">
                    <button className="w-full max-w-[180px] md:max-w-[220px] py-3 bg-[#000000] font-Plancsemibold text-white text-sm md:text-lg rounded-xl hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
@@ -296,7 +296,7 @@ const HomePage = () => {
      </div>
      <div className="w-full flex flex-col items-center pt-12 ">
         <div className="px-5 md:px-0 md:w-[80%] lg:w-[75%] 2xl:w-[55%] mr-auto ml-auto">
-           <h1 className="text-3xl md:text-3xl font-PlancExtraBold py-2 ">Start Earning on the Go <br /> <span className="text-[#5E6562] md:text-4xl">— Join Goaira.</span></h1>
+           <h1 className="text-3xl md:text-3xl font-PlancExtraBold py-2 ">Start Earning on the Go <br /> <span className="text-[#5E6562] md:text-4xl">— Join GoAira.</span></h1>
            <div className="w-full gap-5 md:gap-10 pt-6 lg:gap-16 flex flex-col md:flex-row items-center  justify-center py-2 md:py-5 ">
               <div className="h-full flex">
                  <div className="md:w-[300px] lg:w-[400px]">
@@ -305,12 +305,12 @@ const HomePage = () => {
               </div>
               <div className="flex-1 h-full flex flex-col justify-center gap-1">
                  <div className="py-3">
-                    <h1 className="text-[18px] md:text-lg lg:text-2xl font-Plancsemibold text-[#B9BCBF]">Earn money as a Goaira drive</h1>
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-Plancsemibold lg:w-[90%] pt-2">Start Driving, Start Earning with Goaira</h1>
+                    <h1 className="text-[18px] md:text-lg lg:text-2xl font-Plancsemibold text-[#B9BCBF]">Earn money as a GoAira drive</h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-Plancsemibold lg:w-[90%] pt-2">Start Driving, Start Earning with GoAira</h1>
                  </div>
                  <h1 className="text-lg md:text-[16px] lg:text-xl font-PlancRegular text-[#82898D] lg:w-[90%]">Join a fast-growing platform where rider demand means steady trips and greater income opportunities.</h1>
                 <div className="py-4">
-                   <button onClick={()=>{Navigate('/Registeration');setTimeout(() => window.scrollTo(0, 0), 100);setopen(false)}} className="w-full max-w-[180px] md:max-w-[220px] py-3 bg-[#000000] font-Plancsemibold text-white text-sm md:text-lg rounded-xl hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
+                   <button onClick={()=>{Navigate('/Registeration');setTimeout(() => window.scrollTo(0, 0), 100)}} className="w-full max-w-[180px] md:max-w-[220px] py-3 bg-[#000000] font-Plancsemibold text-white text-sm md:text-lg rounded-xl hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
                     Register to drive
                    </button>
                 </div>
