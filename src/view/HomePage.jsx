@@ -3,6 +3,7 @@ import Header from '../component/Header.jsx'
 import Home_Banner_section_1 from '../assets/images/Home_Banner_section_1.webp'  
 import { motion, useScroll, useTransform,AnimatePresence} from "framer-motion";
 import { useRef } from "react";
+
 import Service_img_1 from '../assets//images/Service_img_1.svg'
 import Service_img_2 from '../assets//images/Service_img_1_1.svg'
 import Service_img_3 from '../assets//images/Service_img_2_1.svg'
@@ -10,12 +11,14 @@ import Service_img_4 from '../assets//images/Service_img_4.svg'
 import Service_img_5 from '../assets//images/Service_img_3_1.svg'
 import Service_img_6 from '../assets//images/Service_img_4_1.svg'
 import Service_img_7 from '../assets//images/ActingDriver.svg'
+
+
 import leftarrow from '../assets/images/LeftArrow.svg'
 import rightarrow from '../assets/images/RightArrow.svg'
 import Banner_2 from  '../assets/images/Banner_section_2.webp' 
 import Banner_3 from  '../assets/images/Banner_section_3.svg' 
-import Banner_4 from  '../assets/images/Banner_section_4_1_1.svg' 
-import Banner_4_2 from  '../assets/images/Banner_section_4_2.svg' 
+import Banner_4 from  '../assets/images/Banner_section_4_1.png' 
+import Banner_4_2 from  '../assets/images/Banner_section_4_2.png' 
 
 import {useNavigate,useLocation} from 'react-router-dom'
 

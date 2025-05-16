@@ -1,15 +1,15 @@
 import React,{useRef,useEffect} from 'react';
-import aboutusbg from '../assets/images/AboutusBg.svg';
-import about_us_banner from '../assets/images/about_us_banner.webp';
-import feature_1 from '../assets/images/About_us_driver_1.svg';
-import feature_2 from '../assets/images/About_us_driver_2.svg';
-import feature_3 from '../assets/images/About_us_driver_3.svg';
-import feature_4 from '../assets/images/About_us_driver_4.svg';
-import feature_5 from '../assets/images/about_us_Consumer_1.svg';
-import feature_6 from '../assets/images/about_us_Consumer_2.svg';
-import feature_7 from '../assets/images/about_us_Consumer_3.svg';
-import feature_8 from '../assets/images/about_us_Consumer_4.svg';
-import feature_9 from '../assets/images/about_us_Consumer_5.svg';
+import aboutusbg from '../assets/images/AboutusBg_1.png';
+import about_us_banner from '../assets/images/about_us_banner_.png';
+import feature_1 from '../assets/images/About_us_driver_1_1.png';
+import feature_2 from '../assets/images/About_us_driver_2_1.png';
+import feature_3 from '../assets/images/About_us_driver_3_1.png';
+import feature_4 from '../assets/images/About_us_driver_4_1.png';
+import feature_5 from '../assets/images/about_us_Consumer_1_1.png';
+import feature_6 from '../assets/images/about_us_Consumer_2_1.png';
+import feature_7 from '../assets/images/about_us_Consumer_3_1.png';
+import feature_8 from '../assets/images/about_us_Consumer_4_1.png';
+import feature_9 from '../assets/images/about_us_Consumer_5_1.png';
 
 import Header from '../component/Header.jsx';
 import FeatureBlock from '../component/FeatureBlock.jsx'
@@ -30,7 +30,7 @@ const Aboutus = () => {
   return (
     <div>
       <Header type="true" path="Registeration" />
-      <div className="relative min-h-[90vh] md:min-h-[50vh] lg:min-h-[90vh] flex items-end bg-cover bg-center" style={{ backgroundImage: `url(${aboutusbg})` }}>
+      <div className="relative min-h-[90vh] md:min-h-[50vh] lg:min-h-[90vh] flex items-end bg-cover bg-center" style={{ backgroundImage: `url(${about_us_banner})` }}>
          <div className="w-full flex flex-col md:pt-14 lg:flex-row px-5 md:w-[90%] lg:w-[80%] 2xl:w-[70%] mr-auto ml-auto">
               <div className="lg:flex-1 md:px-0 flex pt-24 pb-12  flex-col items-end justify-end xs:px-5">
                  <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-Plancsemibold text-white text-center lg:text-right  mr-auto ml-auto lg:w-full">Who we are</h1>
@@ -52,7 +52,7 @@ const Aboutus = () => {
               </div>
                <div className="h-full flex">
                  <div className="md:w-[300px] lg:w-[400px]">
-                   <img src={about_us_banner}  loading="lazy" alt="banner_4" className="w-full h-full" />
+                   <img src={aboutusbg}  loading="lazy" alt="banner_4" className="w-full h-full" />
                  </div>
               </div>
            </div>
