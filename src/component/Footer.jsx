@@ -14,27 +14,29 @@ const Footer = () => {
            <div className="">
                <img src={Goairalightlogo} alt="logo" className="w-[155px]"/>
            </div>
-           <div className="flex-1 flex flex-row flex-wrap gap-7 px-2">
-                  <div className="flex-1">
-                      <h1 className="text-lg lg:text-2xl font-Plancsemibold pb-2 md:pb-4">Company</h1>
-                      <div className="flex flex-col gap-1">
-                        <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">About us</button>
-                        <h1 onClick={() => {navigate('/Careers');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Careers</h1>
-                      </div>
-                  </div>
-                  <div className="flex-1">
-                      <h1 className="text-2xl font-Plancsemibold pb-2 md:pb-4">Products</h1>
-                      <div className="flex flex-col gap-1">
-                        <h1 className="text-[14px] md:text-lg font-PlancRegular">Rider</h1>
-                        <h1 className="text-[14px] md:text-lg font-PlancRegular">Driver</h1>
-                      </div>
+           <div className="flex-1 flex flex-col md:flex-row gap-7 px-2">
+                  <div className="flex-1 flex gap-5">
+                       <div className="flex-1">
+                        <h1 className="text-lg lg:text-2xl font-Plancsemibold pb-2 md:pb-4">Company</h1>
+                        <div className="flex flex-col gap-1">
+                          <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">About us</button>
+                          <h1 onClick={() => {navigate('/Careers');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Careers</h1>
+                        </div>
+                    </div>
+                    <div className="flex-1">
+                        <h1 className="text-2xl font-Plancsemibold pb-2 md:pb-4">Products</h1>
+                        <div className="flex flex-col gap-1">
+                          <h1 className="text-[14px] md:text-lg font-PlancRegular">Rider</h1>
+                          <h1 className="text-[14px] md:text-lg font-PlancRegular">Driver</h1>
+                        </div>
+                    </div>
                   </div>
                   <div className="flex-1">
                       <h1 className="text-2xl font-Plancsemibold pb-2 md:pb-4">Quick links</h1>
                       <div className="flex flex-col gap-1">
-                         <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">FAQ</button>
-                         <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Terms</button>
-                          <button  onClick={() => {navigate('/Aboutus');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Privacy Policy</button>
+                         <button  onClick={() => {navigate('/FAQ');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">FAQ</button>
+                         <button  onClick={() => {navigate('/Terms-and-Conditions');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Terms</button>
+                          <button  onClick={() => {navigate('/Privacy-policy');setTimeout(() => window.scrollTo(0, 0), 100);}} className="text-[14px] md:text-lg text-left cursor-pointer font-PlancRegular">Privacy Policy</button>
                       </div>
                   </div>
            </div>

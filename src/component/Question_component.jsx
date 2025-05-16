@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import Down_arrow from '../assets/images/Down_arrow.svg';
 
-
-
-
 const Question_component = (props) => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -14,7 +11,7 @@ const Question_component = (props) => {
   return (
     <div className="py-12">
       <div className="py-10  flex flex-col items-center justify-center">
-        <h1 className="text-3xl md:text-4xl font-Plancsemibold text-center">{props.type=="Driver"?'Driver':'GoAira Franchise'} Support FAQS</h1>
+        <h1 className="text-3xl md:text-4xl font-Plancsemibold text-center">{props.type === "Driver" ? "Driver" : props.type === "Franchise" ? "GoAira Franchise" : "GoAira -"} Support FAQS</h1>
         <h1 className="text-sm md:text-xl py-1 md:py-2">Checkout the below</h1>
         <div className="w-[90%] md:w-[75%] pt-10 lg:w-[60%] 2xl:w-[50%] space-y-4">
           {props.questions.map((faq, idx) => (

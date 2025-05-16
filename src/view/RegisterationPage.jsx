@@ -62,7 +62,7 @@ const RegisterationPage = () => {
         <div className="w-full flex flex-col md:pt-14 lg:flex-row md:w-[90%] px-5 lg:w-[80%]  mr-auto ml-auto 2xl:w-[70%]">
              <div className="lg:flex-1 gap-2 lg:gap-4 md:px-0 flex pt-24 pb-12 flex-col lg:items-start xs:px-5">
                 <h1 className="text-3xl md:text-5xl lg:text-4xl 2xl:text-5xl font-Plancsemibold text-white  text-center lg:text-left  mr-auto ml-auto lg:w-full md:pr-16">Earn money by driving with GoAira</h1>
-                <h1 className="text-[16px] md:text-lg 2xl:text-2xl font-PlancRegular text-[#aeafaf]  text-center lg:text-left md:w-[75%] mr-auto ml-auto  lg:w-full md:pr-16">Join Goaira as a driver, choose your own hours, and earn on your terms!</h1>
+                <h1 className="text-[16px] md:text-lg 2xl:text-2xl font-PlancRegular text-[#dbdbdb]  text-center lg:text-left md:w-[75%] mr-auto ml-auto  lg:w-full md:pr-16">Join Goaira as a driver, choose your own hours, and earn on your terms!</h1>
              </div>
              <DriverOnboardform />
         </div>

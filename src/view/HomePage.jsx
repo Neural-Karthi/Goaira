@@ -22,6 +22,16 @@ import {useNavigate,useLocation} from 'react-router-dom'
 const HomePage = () => {
     const Navigate = useNavigate()
     const Service_img = [Service_img_1, Service_img_2, Service_img_3, Service_img_4, Service_img_5, Service_img_6]
+    const containter = useRef(null);
+    const { scrollYProgress } = useScroll({ target: containter, offset: ["start end", "end start"] });
+    const scale1 = useTransform(scrollYProgress, [0, 1], [0.75,1.75]);
+    const scrollContainerRef = useRef(null);
+    const [index, setIndex] = useState(0);
+    const [direction, setDirection] = useState(0);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const Service = useRef(null);
+    const location = useLocation();
+
     const servicedetails ={
       service1:{
         title:"Rides,",
@@ -97,13 +107,6 @@ const HomePage = () => {
       })
     };
 
-    const containter = useRef(null);
-    const { scrollYProgress } = useScroll({ target: containter, offset: ["start end", "end start"] });
-    const scale1 = useTransform(scrollYProgress, [0, 1], [0.75,1.75]);
-    const scrollContainerRef = useRef(null);
-
-
-
     const handleCardClick = (index) => {
         const container = scrollContainerRef.current;
         const scrollAmount = 400;
@@ -111,8 +114,9 @@ const HomePage = () => {
           left: index * scrollAmount,
           behavior: "smooth",
         });
-      };
-     const scrollLeft = () => {
+    };
+
+    const scrollLeft = () => {
        if (scrollContainerRef.current) {
          scrollContainerRef.current.scrollBy({ left: -375, behavior: 'smooth' });
        }
@@ -124,35 +128,27 @@ const HomePage = () => {
        }
      };
       
-
-     const [index, setIndex] = useState(0);
-     const [direction, setDirection] = useState(0);
-   
      const paginate = (dir) => {
        setDirection(dir);
        setIndex((prev) => (prev + dir + questiondetails.length) % questiondetails.length);
      };
 
-      const [menuOpen, setMenuOpen] = useState(false);
-
-      useEffect(() => {
-        if (menuOpen) {
-          document.body.classList.add('no-scroll');
-        } else {
-          document.body.classList.remove('no-scroll');
+     useEffect(() => {
+       if (menuOpen) {
+         document.body.classList.add('no-scroll');
+       } else {
+         document.body.classList.remove('no-scroll');
+       }
+       return () => document.body.classList.remove('no-scroll');
+     }, [menuOpen]);
+         
+     useEffect(() => {
+        if (location.hash === "#Service") {
+          setTimeout(() => {
+            Service.current?.scrollIntoView({ behavior: "smooth" });
+          }, 100); 
         }
-        return () => document.body.classList.remove('no-scroll');
-      }, [menuOpen]);
-
-         const Service = useRef(null);
-         const location = useLocation();
-          useEffect(() => {
-          if (location.hash === "#Service") {
-            setTimeout(() => {
-              Service.current?.scrollIntoView({ behavior: "smooth" });
-            }, 100); 
-          }
-        }, [location]);
+      }, [location]);
         
   return (
    <div className="w-full flex flex-col">

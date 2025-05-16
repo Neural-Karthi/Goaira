@@ -5,23 +5,24 @@ import SearchIcon from '../assets/images/SearchIcon.svg';
 import Header from '../component/Header.jsx';
 const CarrerPage = () => {
     const jobdata = [
-    {
-        Jobtitle:'JAVA DEVELOPER',
-        isopen:false,
-        Description:'We`re seeking a Java Developer with 3+ years of experience in Java, Spring, Hibernate, and MySQL. The ideal candidate should have a solid understanding of MVC, JDBC, and RESTful web services. You`ll be responsible for developing and maintaining high-performance applications in a collaborative environment. Strong analytical and teamwork skills are a must. We`re looking for someone who can join immediately and contribute to our team`s success.'
-    },
-        {
-        Jobtitle:'DevOps Engineer',
-        isopen:false,
-        Description:'We`re hiring a DevOps and Cloud Engineer with 3+ years of experience in Kubernetes and GCP. You should have strong hands-on skills with Docker, cloud automation (Java/Python), and infrastructure components like VMs, containers, and networking. Experience with hybrid cloud (AWS/GCP), performance tuning, and cloud migration is a plus. If you`re ready to build scalable, secure cloud solutions, we`d love to hear from you.'
-    },
-        {
-        Jobtitle:'TESTING (MANUAL/AUTOMATION)',
-        isopen:false,
-        Description:'We are looking for a Software Development Test Engineer (SDTE) with a minimum of 2 years of experience in manual and automation testing. The ideal candidate should be able to follow test plans, execute tests, report and track defects using tools like JIRA, HP ALM, or ADO. Quick to understand complex business domains, you’ll play a key role in supporting product releases. Strong analytical skills, attention to detail, and being a collaborative team player are a must. Immediate joiners are preferred.'
-    }
-   ]
-   const [searchQuery, setSearchQuery] = useState("");
+       {
+           Jobtitle:'JAVA DEVELOPER',
+           isopen:false,
+           Description:'We`re seeking a Java Developer with 3+ years of experience in Java, Spring, Hibernate, and MySQL. The ideal candidate should have a solid understanding of MVC, JDBC, and RESTful web services. You`ll be responsible for developing and maintaining high-performance applications in a collaborative environment. Strong analytical and teamwork skills are a must. We`re looking for someone who can join immediately and contribute to our team`s success.'
+       },
+           {
+           Jobtitle:'DevOps Engineer',
+           isopen:false,
+           Description:'We`re hiring a DevOps and Cloud Engineer with 3+ years of experience in Kubernetes and GCP. You should have strong hands-on skills with Docker, cloud automation (Java/Python), and infrastructure components like VMs, containers, and networking. Experience with hybrid cloud (AWS/GCP), performance tuning, and cloud migration is a plus. If you`re ready to build scalable, secure cloud solutions, we`d love to hear from you.'
+       },
+           {
+           Jobtitle:'TESTING (MANUAL/AUTOMATION)',
+           isopen:false,
+           Description:'We are looking for a Software Development Test Engineer (SDTE) with a minimum of 2 years of experience in manual and automation testing. The ideal candidate should be able to follow test plans, execute tests, report and track defects using tools like JIRA, HP ALM, or ADO. Quick to understand complex business domains, you’ll play a key role in supporting product releases. Strong analytical skills, attention to detail, and being a collaborative team player are a must. Immediate joiners are preferred.'
+       }
+    ]
+    const [searchQuery, setSearchQuery] = useState("");
+    
     const filteredJobs = jobdata.filter((job) =>
        job.Jobtitle.toLowerCase().includes(searchQuery.toLowerCase())
     );

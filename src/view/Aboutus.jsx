@@ -20,14 +20,13 @@ const Aboutus = () => {
   const location = useLocation();
   const misson = useRef(null);
   useEffect(() => {
-  if (location.hash === "#misson") {
-    setTimeout(() => {
-      misson.current?.scrollIntoView({ behavior: "smooth" });
-    }, 100); 
-  }
- }, [location]);
+   if (location.hash === "#misson") {
+     setTimeout(() => {
+       misson.current?.scrollIntoView({ behavior: "smooth" });
+     }, 100); 
+   }
+  }, [location]);
 
-   
   return (
     <div>
       <Header type="true" path="Registeration" />

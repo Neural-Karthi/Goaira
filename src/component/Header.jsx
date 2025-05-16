@@ -18,8 +18,77 @@ import Social_media_5 from '../assets/images/Social_media_5.svg'
 import Down_arrow from '../assets/images/Down_arrow.svg';
 
 const Header = (props) => {
+   const [openIndex, setOpenIndex] = useState(null);
    const navigate = useNavigate();
    const [isopen,setopen] =useState(false)
+
+   const faqs = [
+         {
+           Title: "Service",
+           sublist:[
+           {
+             subtitle:'Daily Trips',
+             link:'/#Service'
+           },
+           {
+             subtitle:'Rental',
+             link:'/#Service'
+           },
+           {
+             subtitle:'Outstation',
+             link:'/#Service'
+           },
+           {
+             subtitle:'Acting Drivers',
+             link:'/#Service'
+           }
+          ]
+         },
+         {
+           Title: "Earn with Goaira",
+             sublist:[
+           {
+             subtitle:'Become a driver',
+             link:'/Registeration'
+           },
+           {
+             subtitle:'How it works',
+             link:'/Registeration#Become_a_driver'
+           },
+           {
+             subtitle:'Franchises',
+             link:'/Franchise'
+           }
+          ]
+         },
+         {
+           Title: "Company",
+             sublist:[
+           {
+             subtitle:'About us',
+             link:'/Aboutus'
+           },
+           {
+             subtitle:'Careers',
+             link:'/Careers'
+           }
+          ]
+         },
+         {
+           Title: "Support",
+            sublist:[
+           {
+             subtitle:'For Riders',
+             link:'https://wa.me/9962924599'
+           },
+           {
+             subtitle:'For Drivers',
+             link:'https://wa.me/9962924599'
+           }
+          ]
+         },
+       ];
+
     useEffect(() => {
       if (isopen) {
         document.body.classList.add('no-scroll');
@@ -29,79 +98,9 @@ const Header = (props) => {
       return () => document.body.classList.remove('no-scroll');
     }, [isopen]);
 
-    const faqs = [
-  {
-    Title: "Service",
-    sublist:[
-    {
-      subtitle:'Daily Trips',
-      link:'/#Service'
-    },
-    {
-      subtitle:'Rental',
-      link:'/#Service'
-    },
-    {
-      subtitle:'Outstation',
-      link:'/#Service'
-    },
-    {
-      subtitle:'Acting Drivers',
-      link:'/#Service'
-    }
-   ]
-  },
-  {
-    Title: "Earn with Goaira",
-      sublist:[
-    {
-      subtitle:'Become a driver',
-      link:'/Registeration'
-    },
-    {
-      subtitle:'How it works',
-      link:'/Registeration#Become_a_driver'
-    },
-    {
-      subtitle:'Franchises',
-      link:'/Franchise'
-    }
-   ]
-  },
-  {
-    Title: "Company",
-      sublist:[
-    {
-      subtitle:'About us',
-      link:'/Aboutus'
-    },
-    {
-      subtitle:'Careers',
-      link:'/Careers'
-    }
-   ]
-  },
-  {
-    Title: "Support",
-     sublist:[
-    {
-      subtitle:'For Riders',
-      link:'https://wa.me/9962924599'
-    },
-    {
-      subtitle:'For Drivers',
-      link:'https://wa.me/9962924599'
-    }
-   ]
-  },
-];
-
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-  
+    const toggleFAQ = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
 
   return (
     <div className={`absolute top-0 z-10 w-full ${isopen && 'bg-white'} cursor-default`}>
@@ -221,9 +220,9 @@ const Header = (props) => {
                        </div>
                        <div className="flex-1 flex flex-col items-end text-[#A1A8AF] gap-2 px-2 py-4">
                            <div className="flex flex-row items-center text-[14px] gap-5 px-2">
-                               <h1>Privacy</h1>
-                               <h1>Accessibility</h1>
-                               <h1>Terms</h1>
+                               <h1 className="cursor-pointer" onClick={() => {navigate('/Privacy-policy');;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}>Privacy</h1>
+                               <h1 className="cursor-pointer" onClick={() => {navigate('/FAQ');;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}>FAQ</h1>
+                               <h1 className="cursor-pointer" onClick={() => {navigate('/Terms-and-Conditions');;setopen(false);setTimeout(() => window.scrollTo(0, 0), 100);}}>Terms</h1>
                            </div>
                             <div className="flex-1 flex flex-row text-right gap-5 px-2">
                                <h1 className="text-[14px]">All information is subject to specific conditions.<br />© 2025 GOAIRA. All rights reserved</h1>
@@ -258,9 +257,11 @@ const Header = (props) => {
                          ))}
                          <div className="px-3 py-5 pb-32 flex flex-col gap-3 ">
                              <h1 className="text-[#5E6562] subtitle text-[16px]">Your ride, just minutes away!</h1>
+                                <a href="https://play.google.com/store/apps/details?id=com.goaira.customer" target="_blank" className="w-full">
                             <button className="w-fit py-3 px-8 rounded-full bg-[#FF0000] font-Plancsemibold text-white text-lg hover:scale-105 cursor-pointer transition-transform duration-200 ease-in-out">
                               Download Goaira App
                             </button>
+                            </a>
                          </div>
                     </div>
             </motion.div>
