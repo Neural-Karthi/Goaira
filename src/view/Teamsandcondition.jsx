@@ -3,7 +3,7 @@ import Header from "../component/Header.jsx";
 
 const Teamsandcondition = () => {
   return (
-    <div>
+    <div className="cursor-default">
       <Header />
       <div className="h-[75px]"></div>
       <div className="py-5 px-5 pt-12 md:pt-22 pb-22 md:w-[90%] lg:w-[80%] 2xl:w-[70%]  border-b border-[#b5bbb8] mr-auto ml-auto">

@@ -28,7 +28,7 @@ const Aboutus = () => {
   }, [location]);
 
   return (
-    <div>
+    <div className="cursor-default">
       <Header type="true" path="Registeration" />
       <div className="relative min-h-[90vh] md:min-h-[50vh] lg:min-h-[90vh] flex items-end bg-cover bg-center" style={{ backgroundImage: `url(${about_us_banner})` }}>
          <div className="w-full flex flex-col md:pt-14 lg:flex-row px-5 md:w-[90%] lg:w-[80%] 2xl:w-[70%] mr-auto ml-auto">

@@ -154,7 +154,7 @@ const HomePage = () => {
       }, [location]);
         
   return (
-   <div className="w-full flex flex-col">
+   <div className="w-full flex flex-col cursor-default" >
      <Header/>
      {/* Section 1 */}
      <div className="relative boxheight pt-[40%] md:pt-[35%] lg:pt-[15%] flex items-end justify-center">
@@ -182,10 +182,10 @@ const HomePage = () => {
        </div>
      </div>
      {/* Section 3 */}
-     <div className="py-10 md:py-18 " ref={Service} id="Service">
+     <div className="py-10 md:py-18  " ref={Service} id="Service">
        <div className="h-full mr-auto ml-auto">
          <div className="md:pl-[10%] px-5 md:px-0 pb-4">
-           <h1 className="text-3xl md:text-4xl font-Plancsemibold py-2">Our Services.</h1>
+           <h1 className="text-3xl md:text-4xl font-Plancsemibold py-2 ">Our Services.</h1>
            <h1 className=" text-[#5E6562] font-PlancRegular text-[15px] md:text-lg md:w-[45%]">Services, products, and features may vary by region. Some options listed may not be available in your local Goaira app.</h1>
          </div>
          <div ref={scrollContainerRef} className="flex flex-row items-center md:pl-[10%] px-5 py-3 pr-[3%] overflow-x-auto gap-5 no-scrollbar scroll-smooth">

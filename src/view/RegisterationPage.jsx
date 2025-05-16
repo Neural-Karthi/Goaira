@@ -53,7 +53,7 @@ const RegisterationPage = () => {
 
 
   return (
-    <div>
+    <div className="cursor-default">
       <Header type="true" path="Registeration"/>
       <div className="relative min-h-[120vh] md:min-h-[80vh] lg:min-h-[100vh] flex items-end">
         <div className="h-[85vh] md:h-[65vh] lg:h-[75vh] absolute top-0 -z-10 2xl:h-[80vh] w-full bg-black">

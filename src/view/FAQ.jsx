@@ -76,7 +76,7 @@ const FAQ = () => {
 ];
 
   return (
-    <div>
+    <div className="cursor-default">
       <Header />
       <div className="h-[75px]"></div>
        <Question_component questions={faqs}  />
