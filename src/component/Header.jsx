@@ -113,7 +113,7 @@ const Header = (props) => {
            </div>
            <div className="flex-1 h-full flex items-center justify-end gap-5">
                 <div className="items-center flex-row hidden md:flex">
-                   <a href="https://wa.me/9514295152" target="_blank">    <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button> </a>
+                   <a href="https://wa.me/919514295152" target="_blank">    <button className={`px-8 py-2 rounded-full  text-[15px] font-Plancsemibold hover:scale-102 cursor-pointer ${ props.type === "true"  && !isopen ? 'text-white' :'text-[#434552]'}`}>Support</button> </a>
                    <button className={`px-10 py-2 rounded-full  text-[15px]  font-Plancsemibold hover:scale-102 cursor-pointer ${props.path === 'Registeration'  && !isopen ?'bg-black text-white':'bg-[#2F313F] text-white'}`} onClick={()=>{navigate('/Registeration')}}>Register</button>
                 </div>
                 <div>
@@ -176,8 +176,8 @@ const Header = (props) => {
                             <h1 className="text-lg lg:text-xl font-Plancsemibold pb-2">Support</h1>
                              <div className="flex flex-col gap-5">
                                 <div className="flex flex-col  gap-1">
-                                   <a href="https://wa.me/9514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</a>
-                                   <a href="https://wa.me/9514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</a>
+                                   <a href="https://wa.me/919514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Riders</a>
+                                   <a href="https://wa.me/919514295152" target="_blank" className="text-[14px] md:text-[16px] font-PlancRegular text-[#5E6562] hover:text-black cursor-pointer">For Drivers</a>
                                 </div>
                              </div>
                          </div>
